@@ -10,6 +10,8 @@ from sqlalchemy.util import deprecated
 load_dotenv()
 
 SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGOTITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 
 app = FastAPI() #Extanciar o fastapi
 
